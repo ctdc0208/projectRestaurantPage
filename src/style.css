@@ -1,0 +1,54 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 18px;
+}
+
+.restaurant-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 45px;
+}
+.header-start {
+  padding-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+.header-end {
+  padding-left: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.spacing{
+  padding-right: 20px;
+}
+.header {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.background {
+  background-image: url("https://images.pexels.com/photos/5088017/pexels-photo-5088017.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background-container {
+}
+
+.text-container {
+  padding: 80px;
+}
+
+.text-story {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: justify;
+}
