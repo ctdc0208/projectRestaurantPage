@@ -2,20 +2,36 @@ body {
   height: 100%;
   margin: 0;
   font-size: 18px;
+  color: white;
 }
 
-.restaurant-name {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  font-size: 45px;
+#content {
 }
-.header-start {
-  padding-left: 50px;
+
+.background-image {
+  background-image: url("https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-container {
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 10000px;
+  height: 100%;
+}
+
+.header-container{
+  height: 200px;
+}
+.restaurant-name {
   display: flex;
   justify-content: flex-start;
+  font-size: 45px;
 }
 .header-end {
   padding-left: 50px;
@@ -25,22 +41,12 @@ body {
 .spacing{
   padding-right: 20px;
 }
-.header {
+.banner-text {
   padding: 30px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.background {
-  background-image: url("https://images.pexels.com/photos/5088017/pexels-photo-5088017.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-  height: 700px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.background-container {
 }
 
 .text-container {
