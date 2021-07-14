@@ -27,15 +27,15 @@ const header = (() => {
 
   const headerEnd = document.createElement('div'); // first make headerEnd
   headerEnd.classList.add('header-end');
-  const menu = document.createElement('div');
+  const menu = document.createElement('button');
   menu.textContent = "Menu";
   menu.classList.add('spacing');
   headerEnd.appendChild(menu);
-  const order = document.createElement('div');
+  const order = document.createElement('button');
   order.textContent = "Order Now";
   order.classList.add('spacing');
   headerEnd.appendChild(order); // append order to headerEnd
-  const reservation = document.createElement('div');
+  const reservation = document.createElement('button');
   reservation.textContent = "Reservation";
   headerEnd.appendChild(reservation); // append reservation to headerEnd
   bannerText.appendChild(headerEnd); // then append headerEnd to bannerText

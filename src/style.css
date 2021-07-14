@@ -9,6 +9,22 @@ html, body {
   height: 100%;
 }
 
+button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  overflow: hidden;
+  outline:none;
+  color: white;
+}
+button:hover{
+  cursor: pointer;
+  background-color: gray;
+}
+button:active {
+  background-color: gray;
+}
+
 .background-image {
   background-image: url("https://images.pexels.com/photos/858508/pexels-photo-858508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   height: 100%;
@@ -48,6 +64,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
 }
+
 
 .text-container {
   display: flex;
