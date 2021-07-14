@@ -66,18 +66,36 @@ button:active {
 }
 
 
-.text-container {
+.home-text-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  margin-top: 20%;
-  margin-bottom: 20%;
+  flex-direction: column;
+  margin: auto;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.text-story {
-  margin-left: 30%;
-  margin-right: 30%;
-  text-align: justify;
+.address-text {
+  padding-bottom: 20px;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+}
+.eat-text, .visit-text, .order-text {
+  font-size: 60px;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  background-color: black;
+}
+.eat-text {
+}
+.visit-text {
+}
+.order-text{
 }

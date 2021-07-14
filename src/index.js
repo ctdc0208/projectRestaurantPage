@@ -43,10 +43,30 @@ const header = (() => {
 
 const home = (() => {
   const homeText = document.createElement('div');
-  homeText.classList.add('text-container');
-  const textStory = document.createElement('div');
-  textStory.textContent = "Some Story";
-  textStory.classList.add('text-story');
-  homeText.appendChild(textStory);
+  homeText.classList.add('home-text-container');
+
+  const address = document.createElement('div');
+  address.textContent = "2445 Tanglewood Road — Tupelo, Mississippi — 662-819-2310";
+  address.classList.add('address-text');
+  homeText.appendChild(address);
+
+  const homeButtons = document.createElement('div');
+  homeButtons.classList.add('home-buttons');
+  homeText.appendChild(homeButtons);
+
+  const eat = document.createElement('button');
+  eat.textContent = "Eat";
+  eat.classList.add('eat-text');
+  homeButtons.appendChild(eat);
+  const visit = document.createElement('button');
+  visit.textContent = "Visit";
+  visit.classList.add('visit-text');
+  homeButtons.appendChild(visit);
+
+  const textStory = document.createElement('button');
+  textStory.textContent = "Order";
+  textStory.classList.add('order-text');
+  homeButtons.appendChild(textStory);
+
   mainContainer.appendChild(homeText);
 })();
