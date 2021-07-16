@@ -22,7 +22,7 @@ button:hover{
   background-color: gray;
 }
 button:active {
-  background-color: gray;
+  color: orange;
 }
 
 .background-image {
@@ -48,7 +48,7 @@ button:active {
 .restaurant-name {
   display: flex;
   justify-content: flex-start;
-  font-size: 45px;
+  font-size: 50px;
 }
 .header-end {
   padding-left: 50px;
@@ -70,8 +70,8 @@ button:active {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: auto;
-  width: 60%;
+  max-width: 1000px;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,22 +79,35 @@ button:active {
 }
 
 .address-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   padding-bottom: 20px;
 }
 
 .home-buttons {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 .eat-text, .visit-text, .order-text {
-  font-size: 60px;
-  margin: auto;
-  width: 60%;
-  text-align: center
+  font-size: 70px;
 }
-.eat-text {
+.eat-text:hover {
+  text-decoration: underline;
+  background: Transparent;
 }
 .visit-text {
+  margin: 0;
+ position: absolute;
+ left: 50%;
+ transform: translate(-50%);
 }
-.order-text{
+.visit-text:hover {
+  text-decoration: underline;
+  background: Transparent;
+}
+.order-text:hover {
+  text-decoration: underline;
+  background: Transparent;
 }

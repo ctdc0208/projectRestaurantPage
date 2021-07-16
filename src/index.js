@@ -42,31 +42,30 @@ const header = (() => {
 })();
 
 const home = (() => {
-  const homeText = document.createElement('div');
-  homeText.classList.add('home-text-container');
+  const homeText = document.createElement('div'); // create home text container
+  homeText.classList.add('home-text-container'); // add its classList
 
-  const address = document.createElement('div');
-  address.textContent = "2445 Tanglewood Road — Tupelo, Mississippi — 662-819-2310";
-  address.classList.add('address-text');
-  homeText.appendChild(address);
+  const address = document.createElement('div'); // create address and contacts div
+  address.textContent = "2445 Tanglewood Road — Tupelo, Mississippi — 662-819-2310"; // text content
+  address.classList.add('address-text'); // classList
+  homeText.appendChild(address); // append to the home text container
 
-  const homeButtons = document.createElement('div');
-  homeButtons.classList.add('home-buttons');
-  homeText.appendChild(homeButtons);
+  const homeButtons = document.createElement('div'); // create container for home buttons
+  homeButtons.classList.add('home-buttons'); // add its classList
+  homeText.appendChild(homeButtons); // then append to home text container
 
-  const eat = document.createElement('button');
+  const eat = document.createElement('button'); // make button eat
   eat.textContent = "Eat";
   eat.classList.add('eat-text');
-  homeButtons.appendChild(eat);
-  const visit = document.createElement('button');
+  homeButtons.appendChild(eat); // append to home button
+  const visit = document.createElement('button'); // make button visit
   visit.textContent = "Visit";
   visit.classList.add('visit-text');
-  homeButtons.appendChild(visit);
-
-  const textStory = document.createElement('button');
+  homeButtons.appendChild(visit); // append to home button
+  const textStory = document.createElement('button'); // make button story
   textStory.textContent = "Order";
   textStory.classList.add('order-text');
-  homeButtons.appendChild(textStory);
+  homeButtons.appendChild(textStory); // append to home button
 
-  mainContainer.appendChild(homeText);
+  mainContainer.appendChild(homeText); // then appenf homeText container to the main container
 })();
