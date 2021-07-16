@@ -26,7 +26,7 @@ button:active {
 }
 
 .background-image {
-  background-image: url("https://images.pexels.com/photos/858508/pexels-photo-858508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,6 +95,8 @@ button:active {
 .visit-text, .eat-text, .order-text {
   font-size: 70px;
 }
+.visit-text {
+}
 .visit-text:hover {
   text-decoration: underline;
   background: Transparent;
@@ -108,6 +110,8 @@ button:active {
 .eat-text:hover {
   text-decoration: underline;
   background: Transparent;
+}
+.order-text{
 }
 .order-text:hover {
   text-decoration: underline;
