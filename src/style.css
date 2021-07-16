@@ -38,7 +38,6 @@ button:active {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-height: 10000px;
   height: 100%;
 }
 
@@ -49,6 +48,9 @@ button:active {
   display: flex;
   justify-content: flex-start;
   font-size: 50px;
+}
+.restaurant-name:hover {
+  background: Transparent;
 }
 .header-end {
   padding-left: 50px;
@@ -90,20 +92,20 @@ button:active {
   flex-direction: row;
   justify-content: space-around;
 }
-.eat-text, .visit-text, .order-text {
+.visit-text, .eat-text, .order-text {
   font-size: 70px;
 }
-.eat-text:hover {
+.visit-text:hover {
   text-decoration: underline;
   background: Transparent;
 }
-.visit-text {
+.eat-text {
   margin: 0;
  position: absolute;
  left: 50%;
  transform: translate(-50%);
 }
-.visit-text:hover {
+.eat-text:hover {
   text-decoration: underline;
   background: Transparent;
 }

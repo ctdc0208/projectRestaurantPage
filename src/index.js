@@ -20,7 +20,7 @@ const header = (() => {
   bannerText.classList.add('banner-text');
   headerContainer.appendChild(bannerText); // append bannerText to content
 
-  const restaurantName = document.createElement('div');
+  const restaurantName = document.createElement('button');
   restaurantName.textContent = "Restaurant";
   restaurantName.classList.add('restaurant-name');
   bannerText.appendChild(restaurantName); // make restaurantName
@@ -54,18 +54,22 @@ const home = (() => {
   homeButtons.classList.add('home-buttons'); // add its classList
   homeText.appendChild(homeButtons); // then append to home text container
 
-  const eat = document.createElement('button'); // make button eat
-  eat.textContent = "Eat";
-  eat.classList.add('eat-text');
-  homeButtons.appendChild(eat); // append to home button
   const visit = document.createElement('button'); // make button visit
   visit.textContent = "Visit";
   visit.classList.add('visit-text');
   homeButtons.appendChild(visit); // append to home button
+  const eat = document.createElement('button'); // make button eat
+  eat.textContent = "Eat";
+  eat.classList.add('eat-text');
+  homeButtons.appendChild(eat); // append to home button
   const textStory = document.createElement('button'); // make button story
   textStory.textContent = "Order";
   textStory.classList.add('order-text');
   homeButtons.appendChild(textStory); // append to home button
 
   mainContainer.appendChild(homeText); // then appenf homeText container to the main container
+})();
+
+const displayController = (() => {
+
 })();
