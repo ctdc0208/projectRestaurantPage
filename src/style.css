@@ -45,12 +45,9 @@ button:active {
   height: 200px;
 }
 .restaurant-name {
-  display: flex;
-  justify-content: flex-start;
-  font-size: 50px;
+
 }
 .restaurant-name:hover {
-  background: Transparent;
 }
 .header-end {
   padding-left: 50px;
@@ -72,6 +69,7 @@ button:active {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  justify-content: space-around;
   max-width: 1000px;
   width: 100%;
   position: absolute;
@@ -82,15 +80,18 @@ button:active {
 
 .address-text {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   text-align: center;
   padding-bottom: 20px;
+  font-size: 20px;
 }
 
 .home-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-size: 70px;
 }
 .visit-text, .eat-text, .order-text {
   font-size: 70px;
@@ -98,22 +99,52 @@ button:active {
 .visit-text {
 }
 .visit-text:hover {
-  text-decoration: underline;
-  background: Transparent;
+
 }
 .eat-text {
-  margin: 0;
- position: absolute;
- left: 50%;
- transform: translate(-50%);
+
 }
 .eat-text:hover {
-  text-decoration: underline;
-  background: Transparent;
+
 }
 .order-text{
 }
 .order-text:hover {
-  text-decoration: underline;
-  background: Transparent;
+
+}
+
+/* Style the tab */
+.tab {
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+ background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+ background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ border-top: none;
 }
