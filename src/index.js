@@ -74,9 +74,13 @@ const home = (() => {
   address.classList.add('address-text'); // classList
   homeText.appendChild(address); // append to the home text container
 
+  const homeTab = document.createElement('div');
+  homeTab.classList.add('tab');
+  homeText.appendChild(homeTab)
+
   const homeButtons = document.createElement('div'); // create container for home buttons
   homeButtons.classList.add('home-buttons'); // add its classList
-  homeText.appendChild(homeButtons); // then append to home text container
+  homeTab.appendChild(homeButtons); // then append to home text container
 
   const visit = document.createElement('button'); // make button visit
   visit.textContent = "Visit";
