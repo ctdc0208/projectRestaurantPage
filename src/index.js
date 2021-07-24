@@ -36,9 +36,13 @@ const header = (() => {
   headerContainer.classList.add('header-container');
   mainContainer.appendChild(headerContainer);
 
+  const headerTab = document.createElement('div');
+  headerTab.classList.add('tab');
+  headerContainer.appendChild(headerTab);
+
   const bannerText = document.createElement('div');
   bannerText.classList.add('banner-text');
-  headerContainer.appendChild(bannerText); // append bannerText to content
+  headerTab.appendChild(bannerText); // append bannerText to content
 
   const restaurantName = document.createElement('button');
   restaurantName.textContent = "Restaurant";
