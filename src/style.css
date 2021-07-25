@@ -57,7 +57,7 @@ button:active {
   justify-content: flex-end;
 }
 .spacing{
-  padding-left: 20px;
+  margin-left: 20px;
   font-size: 16px;
 }
 .banner-text {
