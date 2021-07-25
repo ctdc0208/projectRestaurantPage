@@ -29,7 +29,7 @@ const openTab = (evt, tabName) => {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
-}
+};
 
 const header = (() => {
   const headerContainer = document.createElement('div');
@@ -37,7 +37,7 @@ const header = (() => {
   mainContainer.appendChild(headerContainer);
 
   const headerTab = document.createElement('div');
-  headerTab.classList.add('tab');
+  headerTab.classList.add('tab-home');
   headerContainer.appendChild(headerTab);
 
   const bannerText = document.createElement('div');
@@ -84,11 +84,7 @@ const home = (() => {
 
   const homeTab = document.createElement('div');
   homeTab.classList.add('tab');
-<<<<<<< HEAD
   homeText.appendChild(homeTab);
-=======
-  homeText.appendChild(homeTab)
->>>>>>> 359af43271e87ecbbf14056f5ba714931eb4043f
 
   const homeButtons = document.createElement('div'); // create container for home buttons
   homeButtons.classList.add('home-buttons'); // add its classList
@@ -108,6 +104,10 @@ const home = (() => {
   homeButtons.appendChild(textStory); // append to home button
 
   mainContainer.appendChild(homeTabContent); // then append homeText container to the main container
+})();
+
+const menu = (() => {
+
 })();
 
 const displayController = (() => {
