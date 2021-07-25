@@ -58,7 +58,8 @@ button:active {
   justify-content: flex-end;
 }
 .spacing{
-  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 15px;
 }
 .banner-text {
   padding: 30px;
@@ -147,7 +148,4 @@ button:active {
 /* Style the tab content */
 .tabcontent {
  display: none;
- padding: 6px 12px;
- border: 1px solid #ccc;
- border-top: none;
 }

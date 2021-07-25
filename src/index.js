@@ -47,6 +47,8 @@ const header = (() => {
   const restaurantName = document.createElement('button');
   restaurantName.textContent = "Restaurant";
   restaurantName.classList.add('restaurant-name');
+  restaurantName.addEventListener('click', function(){openTab(event, 'Home')});
+  restaurantName.setAttribute("id", "defaultOpen");
   bannerText.appendChild(restaurantName); // make restaurantName
 
   const headerEnd = document.createElement('div'); // first make headerEnd
@@ -61,22 +63,32 @@ const header = (() => {
   headerEnd.appendChild(order); // append order to headerEnd
   const reservation = document.createElement('button');
   reservation.textContent = "Reservation";
+  reservation.classList.add('spacing');
   headerEnd.appendChild(reservation); // append reservation to headerEnd
   bannerText.appendChild(headerEnd); // then append headerEnd to bannerText
 })();
 
 const home = (() => {
+  const homeTabContent = document.createElement('div');
+  homeTabContent.setAttribute("id", "Home");
+  homeTabContent.classList.add('tabcontent');
+
   const homeText = document.createElement('div'); // create home text container
   homeText.classList.add('home-text-container'); // add its classList
+  homeTabContent.appendChild(homeText)
 
   const address = document.createElement('div'); // create address and contacts div
   address.textContent = "2445 Tanglewood Road — Tupelo, Mississippi — 662-819-2310"; // text content
   address.classList.add('address-text'); // classList
   homeText.appendChild(address); // append to the home text container
 
+  const homeTab = document.createElement('div');
+  homeTab.classList.add('tab');
+  homeText.appendChild(homeTab);
+
   const homeButtons = document.createElement('div'); // create container for home buttons
   homeButtons.classList.add('home-buttons'); // add its classList
-  homeText.appendChild(homeButtons); // then append to home text container
+  homeTab.appendChild(homeButtons); // then append to home text container
 
   const visit = document.createElement('button'); // make button visit
   visit.textContent = "Visit";
@@ -91,9 +103,11 @@ const home = (() => {
   textStory.classList.add('order-text');
   homeButtons.appendChild(textStory); // append to home button
 
-  mainContainer.appendChild(homeText); // then appenf homeText container to the main container
+  mainContainer.appendChild(homeTabContent); // then append homeText container to the main container
 })();
 
 const displayController = (() => {
 
 })();
+
+document.getElementById("defaultOpen").click();
