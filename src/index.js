@@ -84,7 +84,11 @@ const home = (() => {
 
   const homeTab = document.createElement('div');
   homeTab.classList.add('tab');
+<<<<<<< HEAD
   homeText.appendChild(homeTab);
+=======
+  homeText.appendChild(homeTab)
+>>>>>>> 359af43271e87ecbbf14056f5ba714931eb4043f
 
   const homeButtons = document.createElement('div'); // create container for home buttons
   homeButtons.classList.add('home-buttons'); // add its classList
