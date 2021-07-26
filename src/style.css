@@ -79,14 +79,12 @@ button:active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .address-text {
   display: flex;
   justify-content: center;
   text-align: center;
   padding-bottom: 20px;
 }
-
 .home-buttons {
   display: flex;
   flex-direction: row;
@@ -117,6 +115,27 @@ button:active {
   text-decoration: underline;
   background: Transparent;
 }
+
+.menu-text-container {
+
+}
+.menu-dish-text {
+
+}
+.order-now-text-container {
+
+}
+.order-now-text {
+
+}
+.reservation-text-container {
+
+}
+.reservation-text {
+
+}
+
+
 
 /* Style the tab */
 .tab {
