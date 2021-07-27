@@ -31,6 +31,9 @@ button:active {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.white-background {
+  background-color: white;
+}
 
 .main-container {
   max-width: 1000px;
@@ -59,6 +62,9 @@ button:active {
 .spacing{
   margin-left: 20px;
   font-size: 16px;
+}
+.spacing.active {
+  color: orange;
 }
 .banner-text {
   padding: 30px;
@@ -117,7 +123,11 @@ button:active {
 }
 
 .menu-text-container {
-
+  background-color: white;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .menu-dish-text {
 
@@ -129,10 +139,8 @@ button:active {
 
 }
 .reservation-text-container {
-
 }
 .reservation-text {
-
 }
 
 
@@ -163,10 +171,9 @@ button:active {
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  color: orange;
 }
 .tab-home button.active{
-
 }
 
 /* Style the tab content */
