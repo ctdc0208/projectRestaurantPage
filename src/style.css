@@ -36,15 +36,15 @@ button:active {
 }
 
 .main-container {
+}
+
+.header-container{
   max-width: 1000px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
-}
-
-.header-container{
-  height: 200px;
+  height: 150px;
 }
 .restaurant-name {
   display: flex;
@@ -122,12 +122,13 @@ button:active {
   background: Transparent;
 }
 
-.menu-text-container {
+.menu-text-container, .order-now-text-container, .reservation-text-container {
   background-color: white;
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  color: black;
+  min-height: 700px;
+  height: 100%;
+  text-align: center;
 }
 .menu-dish-text {
 
