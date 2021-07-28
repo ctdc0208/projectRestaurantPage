@@ -38,6 +38,12 @@ button:active {
 .main-container {
 }
 
+.header {
+}
+.header-change-background {
+  background-image: url("https://images.pexels.com/photos/4255489/pexels-photo-4255489.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+}
 .header-container{
   max-width: 1000px;
   width: 100%;
@@ -126,7 +132,7 @@ button:active {
   background-color: white;
   height: 100%;
   color: black;
-  min-height: 700px;
+  min-height: 1500px;
   height: 100%;
   text-align: center;
 }
@@ -180,4 +186,20 @@ button:active {
 /* Style the tab content */
 .tabcontent {
  display: none;
+}
+
+/* Style the header */
+.header {
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .tabcontent {
+  padding-top: 500px;
 }

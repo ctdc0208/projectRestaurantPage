@@ -51,10 +51,26 @@ const openTab = (evt, tabName) => {
   evt.currentTarget.className += " active";
 };
 
+const headerBackgroundChange = () => {
+  const changeHeaderBG = document.getElementById('myHeader');
+  changeHeaderBG.classList.remove('header');
+  changeHeaderBG.classList.add('header-change-background');
+}
+const headerBackgroundChangeRemover = () => {
+  const changeHeaderBG = document.getElementById('myHeader');
+  changeHeaderBG.classList.remove('header-change-background');
+  changeHeaderBG.classList.add('header');
+}
+
 const header = (() => {
+  const myHeader = document.createElement('div');
+  myHeader.classList.add('header');
+  myHeader.setAttribute('id', 'myHeader');
+  mainContainer.appendChild(myHeader);
+
   const headerContainer = document.createElement('div');
   headerContainer.classList.add('header-container');
-  mainContainer.appendChild(headerContainer);
+  myHeader.appendChild(headerContainer);
 
   const headerTab = document.createElement('div');
   headerTab.classList.add('tab-home');
@@ -69,6 +85,7 @@ const header = (() => {
   restaurantName.classList.add('restaurant-name');
   restaurantName.addEventListener('click', function(){openTab(event, 'Home')});
   restaurantName.setAttribute("id", "defaultOpen");
+  restaurantName.addEventListener("click", headerBackgroundChangeRemover);
   bannerText.appendChild(restaurantName); // make restaurantName
 
   const headerEnd = document.createElement('div'); // first make headerEnd
@@ -77,16 +94,19 @@ const header = (() => {
   menu.textContent = "Menu";
   menu.classList.add('spacing');
   menu.addEventListener('click', function(){openTab(event, 'Menu')});
+  menu.addEventListener("click", headerBackgroundChange);
   headerEnd.appendChild(menu);
   const order = document.createElement('button');
   order.textContent = "Order Now";
   order.classList.add('spacing');
   order.addEventListener('click', function(){openTab(event, 'Order')});
+  order.addEventListener("click", headerBackgroundChange);
   headerEnd.appendChild(order); // append order to headerEnd
   const reservation = document.createElement('button');
   reservation.textContent = "Reservation";
   reservation.classList.add('spacing');
   reservation.addEventListener('click', function(){openTab(event, 'Reservation')});
+  reservation.addEventListener("click", headerBackgroundChange);
   headerEnd.appendChild(reservation); // append reservation to headerEnd
   bannerText.appendChild(headerEnd); // then append headerEnd to bannerText
 })();
@@ -117,16 +137,19 @@ const home = (() => {
   visit.textContent = "Visit";
   visit.classList.add('visit-text');
   visit.addEventListener('click', function(){openTab(event, 'Reservation')});
+  visit.addEventListener("click", headerBackgroundChange);
   homeButtons.appendChild(visit); // append to home button
   const eat = document.createElement('button'); // make button eat
   eat.textContent = "Eat";
   eat.classList.add('eat-text');
   eat.addEventListener('click', function(){openTab(event, 'Menu')});
+  eat.addEventListener("click", headerBackgroundChange);
   homeButtons.appendChild(eat); // append to home button
   const orderHome = document.createElement('button'); // make button story
   orderHome.textContent = "Order";
   orderHome.classList.add('order-text');
   orderHome.addEventListener('click', function(){openTab(event, 'Order')});
+  orderHome.addEventListener("click", headerBackgroundChange);
   homeButtons.appendChild(orderHome); // append to home button
 
   mainContainer.appendChild(homeTabContent); // then append homeText container to the main container
@@ -185,6 +208,25 @@ const reservationTabContent = (() => {
 
 const displayController = (() => {
 
+})();
+
+const stickyHeader = (() =>{
+  window.onscroll = function() {stickyFunction()};
+
+    // Get the header
+  var header = document.getElementById("myHeader");
+
+    // Get the offset position of the navbar
+  var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function stickyFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+       header.classList.remove("sticky");
+      }
+    }
 })();
 
 document.getElementById("defaultOpen").click();
