@@ -111,6 +111,16 @@ const header = (() => {
   bannerText.appendChild(headerEnd); // then append headerEnd to bannerText
 })();
 
+const end = () => {
+  const endContainer = document.createElement('div');
+  endContainer.classList.add('end-container');
+
+  const endText = document.createElement('div');
+  endText.textContent = "Facebook Twitter Instagram";
+  endText.classList.add('end-container');
+  endContainer.appendChild(endText);
+};
+
 const home = (() => {
   const homeTabContent = document.createElement('div');
   homeTabContent.setAttribute("id", "Home");
@@ -169,6 +179,23 @@ const menu = (() => {
   menuDish.textContent = "MENU DISH";
   menuTextContainer.appendChild(menuDish);
 
+  const endContainer = document.createElement('div');
+  endContainer.classList.add('end-container');
+  const endFacebook = document.createElement('button');
+  endFacebook.textContent = "Facebook";
+  endFacebook.classList.add('end-facebook');
+  endContainer.appendChild(endFacebook);
+  const endTwitter = document.createElement('button');
+  endTwitter.textContent = "Twitter";
+  endTwitter.classList.add('end-twitter');
+  endContainer.appendChild(endTwitter);
+  const endInstagram = document.createElement('button');
+  endInstagram.textContent = "Instagram";
+  endInstagram.classList.add('end-instagram');
+  endContainer.appendChild(endInstagram);
+
+  menuTabContent.appendChild(endContainer);
+
   mainContainer.appendChild(menuTabContent);
 })();
 
@@ -186,6 +213,23 @@ const orderNow = (() => {
   orderNowText.textContent = "ORDER NOW";
   orderNowTextContainer.appendChild(orderNowText);
 
+  const endContainer = document.createElement('div');
+  endContainer.classList.add('end-container');
+  const endFacebook = document.createElement('button');
+  endFacebook.textContent = "Facebook";
+  endFacebook.classList.add('end-facebook');
+  endContainer.appendChild(endFacebook);
+  const endTwitter = document.createElement('button');
+  endTwitter.textContent = "Twitter";
+  endTwitter.classList.add('end-twitter');
+  endContainer.appendChild(endTwitter);
+  const endInstagram = document.createElement('button');
+  endInstagram.textContent = "Instagram";
+  endInstagram.classList.add('end-instagram');
+  endContainer.appendChild(endInstagram);
+
+  orderNowTabContent.appendChild(endContainer);
+
   mainContainer.appendChild(orderNowTabContent);
 })();
 
@@ -202,6 +246,23 @@ const reservationTabContent = (() => {
   reservationText.classList.add('reservation-text');
   reservationText.textContent = "reservation";
   reservationTextContainer.appendChild(reservationText);
+
+  const endContainer = document.createElement('div');
+  endContainer.classList.add('end-container');
+  const endFacebook = document.createElement('button');
+  endFacebook.textContent = "Facebook";
+  endFacebook.classList.add('end-facebook');
+  endContainer.appendChild(endFacebook);
+  const endTwitter = document.createElement('button');
+  endTwitter.textContent = "Twitter";
+  endTwitter.classList.add('end-twitter');
+  endContainer.appendChild(endTwitter);
+  const endInstagram = document.createElement('button');
+  endInstagram.textContent = "Instagram";
+  endInstagram.classList.add('end-instagram');
+  endContainer.appendChild(endInstagram);
+
+  reservationTabContent.appendChild(endContainer);
 
   mainContainer.appendChild(reservationTabContent);
 })();

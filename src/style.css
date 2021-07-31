@@ -132,7 +132,7 @@ button:active {
   background-color: white;
   height: 100%;
   color: black;
-  min-height: 1500px;
+  min-height: 1000px;
   height: 100%;
   text-align: center;
 }
@@ -150,7 +150,16 @@ button:active {
 .reservation-text {
 }
 
-
+.end-container {
+  background-color: black;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+.end-facebook, .end-twitter, .end-instagram {
+  margin-left: 40px;
+  font-size: 25px;
+}
 
 /* Style the tab */
 .tab {
