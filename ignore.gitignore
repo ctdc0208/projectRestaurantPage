@@ -1,1 +1,17 @@
 node_modules
+<<<<<<< HEAD
+=======
+src/**/_*.json
+src/**/_*.md
+.vscode
+.idea
+.DS_Store
+npm-debug.log
+yarn-error.log
+package-lock.json
+.cache
+internal-links.tap
+stats.json
+printable.md
+repositories/*.json
+>>>>>>> 3e5dde1bf971b836f096515b1a365293165268db
